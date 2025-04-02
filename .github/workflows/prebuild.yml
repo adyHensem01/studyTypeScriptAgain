@@ -1,4 +1,4 @@
-name: Prebuild with GitGraph.js
+name: Prebuild with Git Graph Extension
 
 on:
   push:
@@ -16,13 +16,14 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Set Up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
+      - name: Install VS Code
+        run: |
+          sudo apt update
+          sudo apt install -y code
 
-      - name: Install GitGraph.js
-        run: npm install @gitgraph/js
+      - name: Install Git Graph Extension
+        run: |
+          code --install-extension mhutchie.git-graph
 
-      - name: Build Project
-        run: npm run build
+      - name: Verify Installed Extensions
+        run: code --list-extensions
