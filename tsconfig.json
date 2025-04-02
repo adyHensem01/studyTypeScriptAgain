@@ -18,7 +18,8 @@
     "jsx": "preserve", // Use React JSX transform
     "incremental": true,
     "types": [
-      "jest"
+      "jest",
+      "node"
     ],
     "plugins": [
       {
