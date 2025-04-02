@@ -1,0 +1,6 @@
+{
+    "name": "My Codespace",
+    "extensions": [
+      "mhutchie.git-graph"
+    ]
+  }
