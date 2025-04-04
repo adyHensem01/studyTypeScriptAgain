@@ -15,7 +15,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx", // Use React JSX transform
+    "jsx": "react", // Use React JSX transform
     "incremental": true,
     "types": [
       "jest",
